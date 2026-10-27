@@ -28,17 +28,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
-Plug 'preservim/nerdtree'
 call plug#end()
 
 " let g:gruvbox_contrast_dark = 'hard'
-
-" let g:gutentags_cache_dir = '~/.vim/tags'
-" let g:gutentags_ctags_args = ['--languages=cpp,c,python', '--fields=+l']
-" let g:gutentags_generate_on_missing = 0
-" let g:gutentags_use_compdb = 0
-
-
 let g:rainbow_active = 1
 
 let g:undotree_WindowLayout = 4
@@ -54,7 +46,6 @@ set autoindent
 set autochdir
 set background=dark
 set nocompatible
-set colorcolumn=144
 set confirm
 set cursorline
 set clipboard=unnamedplus
@@ -93,7 +84,6 @@ set titlestring=%F
 nnoremap <leader>e :Explore<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
-nnoremap <leader>n :NERDTreeToggle<CR>
 
 colorscheme molokai
 nnoremap <C-h> <C-w>h
@@ -114,7 +104,8 @@ nnoremap <D-7> 7gt
 nnoremap <D-8> 8gt
 nnoremap <D-9> 9gt
 
+" let g:netrw_liststyle = 1
+" let g:netrw_fastbrowse=0
 let g:netrw_sort_by = "name"
 let g:netrw_sort_direction = "normal"
-let g:netrw_liststyle = 1
-let g:netrw_fastbrowse=0
+let g:netrw_sort_sequence = '[\/]$,*,'
